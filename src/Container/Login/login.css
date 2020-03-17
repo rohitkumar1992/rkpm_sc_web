@@ -1,0 +1,86 @@
+[class*="fontawesome-"]:before { font-family: 'FontAwesome', sans-serif;}
+
+/* ---------- GENERAL ---------- */
+a {color: #eee;text-decoration: none;}
+a:hover {text-decoration: underline;}
+input {    border: none;    font-family: 'Open Sans', Arial, sans-serif;font-size: 14px;line-height: 1.5em;padding: 0; -webkit-appearance: none;}
+p {line-height: 1.5em;}
+
+.login_container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 45px 30px;
+  background: #fff;
+  box-shadow: 0px 0px 41px -14px #fff;
+  -moz-box-shadow: 0px 0px 41px -14px #000;
+  -webkit-box-shadow: 0px 0px 41px -14px #000;
+}
+
+.s_middle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login_main{
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 10px 0px 10px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #0195ed 50%, #0195ed 100%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Login_main fieldset{ padding:0; border:0; margin: 0;}
+.Login_main fieldset > div { width: 100%; margin-top: 30px; }
+.Login_main fieldset > div > span { display: inline-block; width: 100% !important; text-align: center !important; margin: 0px!important; }
+.Login_main form fieldset > p { width: 100%; border-bottom: 1px solid #ddd; }
+
+#s_login {
+    flex: 0 0 300px;
+    -moz-flex: 0 0 300px;
+    -webkit-flex: 0 0 300px;
+    -ms-flex: 0 0 300px;
+    max-width:300px;
+    padding-right: 20px; border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#s_login * { box-sizing: border-box;}
+.logo{
+  flex: 0 0 223px;
+  -moz-flex: 0 0 223px;
+  -webkit-flex: 0 0 223px;
+  -ms-flex: 0 0 223px;
+  max-width:223px;
+}
+
+#s_login form span.fa {
+    background-color: #fff;
+    border-radius: 3px 0px 0px 3px;
+    color: #333;
+    display: block;
+    float: left;
+    height: 50px;
+  font-size:24px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+#s_login form input {
+    height: 50px;
+  width: 229px;
+  background: #fff;
+    border-radius: 0px;
+    color: #000;
+    padding: 0 10px;
+  margin-bottom:0px;
+}
+
+#login_button{display: inline-block; padding: 10px 20px; min-width: 150px; height: 45px; line-height: 25px; border:0px; border-radius: 5px; text-align: center; color:#fff; font-weight: 600; background:#0195ed;}
+#login_button:hover {background: #489ed2;} 
