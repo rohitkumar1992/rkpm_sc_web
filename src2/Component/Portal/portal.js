@@ -10,8 +10,8 @@ import InputBox from '../InputComponent/InputComponent';
 import {Dropdown} from 'primereact/dropdown';
 import MultiSelect from '../multiselect.js'
 import DropDown from '../dropdown.js';
-import Moment from 'react-moment';
 import CSVReader from "react-csv-reader";
+import Moment from 'react-moment';
 const papaparseOptions = {
   header: true,
   dynamicTyping: true,
@@ -752,7 +752,7 @@ return ReactDOM.createPortal(
         <div class="modal-content">
           <div class="modal-body">
           <button type="button" class="close" onClick={()=>{props.closeModal();$("#portal_modal").removeClass("show");$("body").removeClass("bfix")}}>&times;</button>
-          {!props.modal_loading && <div class="sched_pop_cont">
+          {!props.modal_loading && <div>
             <div class="searchbox">
               <div class="inputbox">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -791,9 +791,9 @@ return ReactDOM.createPortal(
             </div>
             </div>
           }
-            {(props.libraryData.length>0 && !props.modal_loading ) &&<div class="buttons">
+            <div class="buttons">
               <button type="button" class="btndefault" onClick={()=>checkeddata('library','selected_library')}>Save</button>
-            </div>}
+            </div>
             <span id="error_msg" style={{color:'red'}}></span>
             {props.modal_loading && <Loader message={props.loading_msg}/>}
           </div>
@@ -803,7 +803,7 @@ return ReactDOM.createPortal(
         <div class="modal-content">
           <div class="modal-body">
           <button type="button" class="close" onClick={()=>{props.closeModal();$("#portal_modal").removeClass("show");$("body").removeClass("bfix")}}>&times;</button>
-          {!props.modal_loading && <div div class="sched_pop_cont"><div class="searchbox">
+          {!props.modal_loading && <div><div class="searchbox">
             <div class="inputbox">
               <i class="fa fa-search" aria-hidden="true"></i>
               <input type="text" placeholder="Search Commercial" alt="" onChange={(e)=>props.getData(e.target.value,'commercial')}/>
@@ -813,12 +813,12 @@ return ReactDOM.createPortal(
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>Select</th>
                   <th>Commercial Id</th>
                   <th>Name</th>
                   <th>Short Name</th>
                   <th>Rights</th>
                   <th>Duration</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -841,9 +841,9 @@ return ReactDOM.createPortal(
             </div>
             </div>
           }
-            {(props.commercialData.length>0 && !props.modal_loading ) && <div class="buttons">
+            <div class="buttons">
               <button type="button" class="btndefault" onClick={()=>checkeddata('commercial','selected_commercial')}>Save</button>
-            </div>}
+            </div>
             <span id="error_msg" style={{color:'red'}}></span>
             {props.modal_loading && <Loader message={props.loading_msg}/>}
           </div>

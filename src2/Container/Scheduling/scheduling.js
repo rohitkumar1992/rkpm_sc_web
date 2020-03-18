@@ -109,7 +109,7 @@ class Scheduling extends Component {
     <div class="schedlng">
       <div class="buttons">
         <a class="btn s_btn" href="Javascript:" onClick={()=>{this.getData('','library');this.setState({modal_type:"select_library_data",open_portal:true,modal_loading:true});$("#portal_modal").addClass("show");$("body").addClass("bfix")}}>Add Library <span><i class="fas fa-plus"></i></span></a>
-        <a class="btn s_btn" href="Javascript:" onClick={()=>{this.getData('','commercial');this.setState({modal_type:"select_commercial_data",open_portal:true,modal_loading:true});$("#portal_modal").addClass("show");$("body").addClass("bfix")}}>Add Commercial <span><i class="fas fa-plus"></i></span></a>
+        <a class="btn s_btn" href="Javascript:" onClick={()=>{this.getData('','commercial');this.setState({modal_type:"select_commercial_data",open_portal:true});$("#portal_modal").addClass("show");$("body").addClass("bfix")}}>Add Commercial <span><i class="fas fa-plus"></i></span></a>
       </div>
       <div class="sched_cont">
         <RowDragger draggerData={this.state.draggerData} updateDrag={(e)=>this.setState({draggerData:e})}/>
